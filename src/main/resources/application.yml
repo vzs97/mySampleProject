@@ -1,0 +1,21 @@
+server:
+  port: 2000
+
+# message source
+spring:
+  messages:
+   basename: i18n/messages
+   encoding: UTF-8
+
+# Logging pattern
+logging:
+  pattern:
+    console: "%clr(%-5level) %clr(%d{yyyy-MM-dd HH:mm:ss}){faint} %clr([%thread]){magenta} %clr(%logger{36}){cyan} - %msg%n"
+    file: "%clr(%-5level) %clr(%d{yyyy-MM-dd HH:mm:ss}){faint} %clr([%thread]){magenta} %clr(%logger{36}){cyan} - %msg%n"
+
+# cassandra
+vzs:
+  cassandra:
+    keyspace-name: example
+    contact-points: localhost
+    port: 9042
