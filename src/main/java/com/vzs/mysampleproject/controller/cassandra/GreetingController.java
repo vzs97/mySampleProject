@@ -31,7 +31,6 @@ public class GreetingController {
     @GetMapping(value = "/greeting/{user}")
     public Slice<Greeting> greetingUserLimit(@PathVariable("user") String user,
                                              @RequestParam(defaultValue = "100") Integer limit) {
-//        return greetRepository.findByUser(user, limit);
         return greetRepository.findByUser(user, CassandraPageRequest.of(0,limit));
 
     }
