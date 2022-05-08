@@ -17,5 +17,5 @@ logging:
 vzs:
   cassandra:
     keyspace-name: example
-    contact-points: localhost
+    contact-points: 192.168.3.97
     port: 9042

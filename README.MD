@@ -10,3 +10,5 @@
 * brew services start cassandra
 * brew services stop cassandra
 * brew services restart cassandra
+### java
+VzsCassandraConfig

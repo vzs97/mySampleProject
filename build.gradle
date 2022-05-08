@@ -23,7 +23,7 @@ repositories {
 }
 
 dependencies {
-    implementation 'org.springframework.boot:spring-boot-starter-data-cassandra'
+//    implementation 'org.springframework.boot:spring-boot-starter-data-cassandra'
     implementation 'org.springframework.boot:spring-boot-starter-web'
     implementation group: 'com.google.guava', name: 'guava', version: '31.0.1-jre'
     compileOnly 'org.projectlombok:lombok'
